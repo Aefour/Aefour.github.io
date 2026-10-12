@@ -1,0 +1,1040 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f1d2a">
+  <meta name="description" content="孙斌建筑设计师与建筑方案设计师求职作品集，展示建筑改造、养老建筑设计、教育经历与实践经验。">
+  <title>孙斌 · 建筑设计师作品集</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%230f1d2a'/%3E%3Cpath d='M14 48V24l18-10 18 10v24M24 48V31h16v17' fill='none' stroke='%23ff6b48' stroke-width='5' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --ink: #101b27;
+      --paper: #eff0ee;
+      --card: #fbfbf8;
+      --accent: #d96848;
+      --acid: #b9d2d9;
+      --muted: #68737c;
+      --line: rgba(16, 27, 39, 0.17);
+      --max: 1240px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      letter-spacing: 0.005em;
+    }
+    a { color: inherit; text-decoration: none; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    img { max-width: 100%; display: block; }
+
+    .shell { width: min(calc(100% - 40px), var(--max)); margin: 0 auto; }
+    .eyebrow {
+      margin: 0 0 14px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    .eyebrow, .hero-label, .project-meta, .visual-index, .fact small, .brand-mark {
+      font-family: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    }
+    .section-title {
+      margin: 0;
+      max-width: 860px;
+      font-size: clamp(2.3rem, 6vw, 5.6rem);
+      line-height: 0.96;
+      letter-spacing: -0.055em;
+      font-weight: 850;
+    }
+    .section-title span { color: var(--accent); }
+    .section-head {
+      display: grid;
+      grid-template-columns: 1.35fr 0.65fr;
+      gap: 72px;
+      align-items: end;
+      margin-bottom: 72px;
+    }
+    .section-intro { margin: 0; max-width: 360px; color: var(--muted); font-size: 0.94rem; line-height: 1.9; }
+    .profile-lead {
+      max-width: 900px;
+      margin: -18px 0 72px;
+      color: var(--ink);
+      font-size: clamp(1.24rem, 1.8vw, 1.55rem);
+      line-height: 1.82;
+      letter-spacing: -0.012em;
+      text-align: justify;
+      text-align-last: left;
+      text-justify: inter-character;
+      line-break: strict;
+      text-wrap: pretty;
+    }
+
+    .skip-link {
+      position: fixed;
+      left: 18px;
+      top: -80px;
+      z-index: 100;
+      padding: 10px 14px;
+      color: white;
+      background: var(--ink);
+    }
+    .skip-link:focus { top: 18px; }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      border-bottom: 1px solid var(--line);
+      background: rgba(239, 240, 238, 0.9);
+      backdrop-filter: blur(18px);
+    }
+    .nav {
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 850;
+      letter-spacing: -0.03em;
+    }
+    .brand-mark {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      color: white;
+      background: var(--ink);
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+    }
+    .nav-links { display: flex; gap: 26px; font-size: 0.88rem; font-weight: 700; }
+    .nav-links a { position: relative; padding: 8px 0; }
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 100%;
+      bottom: 4px;
+      height: 2px;
+      background: var(--accent);
+      transition: right 180ms ease;
+    }
+    .nav-links a:hover::after, .nav-links a:focus-visible::after { right: 0; }
+    .menu-button { display: none; border: 0; background: transparent; font: inherit; font-weight: 800; }
+
+    .hero {
+      min-height: calc(100svh - 71px);
+      padding: 54px 0 44px;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 38px;
+      overflow: hidden;
+    }
+    .hero-top { display: flex; justify-content: space-between; gap: 30px; align-items: start; }
+    .hero-label { display: flex; align-items: center; gap: 12px; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.14em; }
+    .hero-label::before { content: ""; width: 44px; height: 2px; background: var(--accent); }
+    .availability { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 0.85rem; }
+    .availability::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--acid); box-shadow: 0 0 0 5px rgba(185, 210, 217, 0.28); }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 4vw;
+      align-items: center;
+    }
+    .hero h1 {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: clamp(20px, 2.2vw, 34px);
+      font-size: clamp(4rem, 11vw, 10rem);
+      line-height: 0.76;
+      letter-spacing: -0.08em;
+      font-weight: 900;
+    }
+    .hero h1 .hero-name { position: relative; z-index: 1; }
+    .hero h1 .outline {
+      color: transparent;
+      -webkit-text-stroke: 2px var(--ink);
+      font-size: 0.56em;
+      line-height: 0.95;
+      letter-spacing: 0.08em;
+    }
+    .hero-copy { max-width: 760px; margin: 34px 0 0; font-size: clamp(1.02rem, 1.42vw, 1.22rem); line-height: 1.82; letter-spacing: 0.006em; }
+    .hero-copy-line { display: block; white-space: nowrap; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+    .button {
+      min-height: 48px;
+      padding: 0 20px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border: 1px solid var(--ink);
+      font-size: 0.88rem;
+      font-weight: 800;
+      transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+    }
+    .button.primary { color: white; background: var(--ink); }
+    .button:hover, .button:focus-visible { transform: translate(-3px, -3px); box-shadow: 5px 5px 0 var(--accent); }
+    .button:focus-visible { outline: 3px solid var(--acid); outline-offset: 3px; }
+
+    .hero-plate {
+      position: relative;
+      width: min(118%, 680px);
+      min-height: 0;
+      aspect-ratio: 2560 / 1706;
+      justify-self: end;
+      align-self: center;
+      border: 1px solid var(--ink);
+      background:
+        linear-gradient(var(--line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--line) 1px, transparent 1px),
+        var(--card);
+      background-size: 32px 32px;
+      overflow: hidden;
+    }
+    .hero-cover-image {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    .plate-note {
+      position: absolute;
+      z-index: 2;
+      left: 18px;
+      top: 18px;
+      padding: 8px 11px;
+      color: white;
+      background: var(--ink);
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+    }
+    .plate-name {
+      position: absolute;
+      z-index: 3;
+      right: 18px;
+      bottom: 18px;
+      max-width: none;
+      padding: 14px 16px;
+      white-space: nowrap;
+      color: white;
+      background: transparent;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+      font-size: clamp(0.78rem, 1.1vw, 1rem);
+      font-weight: 850;
+      line-height: 1.25;
+    }
+    .hero-bottom {
+      padding-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      border-top: 1px solid var(--line);
+    }
+    .fact small { display: block; color: var(--muted); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; }
+    .fact strong { display: block; margin-top: 4px; font-size: 0.95rem; }
+    .fact strong span { display: block; }
+    .fact strong span + span { margin-top: 3px; }
+
+    .ticker {
+      overflow: hidden;
+      color: white;
+      background: var(--ink);
+      border-block: 1px solid var(--ink);
+    }
+    .ticker-track {
+      width: max-content;
+      padding: 13px 0;
+      display: flex;
+      gap: 0;
+      font-size: 0.85rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      animation: ticker 24s linear infinite;
+      will-change: transform;
+    }
+    .ticker-group { display: flex; flex: none; }
+    .ticker-group span { flex: none; white-space: nowrap; }
+    .ticker-group span::after { content: "✦"; margin: 0 26px; color: var(--accent); }
+    @keyframes ticker { to { transform: translateX(-50%); } }
+
+    section { padding: 150px 0; }
+    #projects { background: var(--card); }
+    .project-list { display: grid; gap: 86px; }
+    .project {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 42px;
+      align-items: stretch;
+    }
+    .project:nth-child(even) .project-visual { order: 2; }
+    .project:nth-child(even) .project-assets { order: 3; }
+    .project-visual {
+      min-height: 500px;
+      position: relative;
+      border: 1px solid var(--ink);
+      overflow: hidden;
+      background: #dde2e0;
+    }
+    .project-visual.has-photo { background: var(--ink); }
+    .project-visual.has-photo > img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center; }
+    .project-visual.has-photo::after { content: ""; position: absolute; inset: 55% 0 0; background: linear-gradient(transparent, rgba(15,29,42,.74)); pointer-events: none; }
+    .project-visual.has-plan { padding: 26px; background: white; }
+    .project-visual.has-plan > img { width: 100%; height: 100%; display: block; object-fit: contain; }
+    .visual-caption { position: absolute; z-index: 3; left: 18px; right: 18px; bottom: 18px; padding: 14px 16px; display: flex; justify-content: space-between; gap: 18px; color: white; background: rgba(15,29,42,.9); font-size: .78rem; }
+    .visual-caption strong { color: var(--acid); }
+    .drawing { position: absolute; inset: 0; }
+    .drawing::before, .drawing::after { content: ""; position: absolute; border: 2px solid var(--ink); }
+    .drawing-one {
+      background: linear-gradient(145deg, #c8d1d0 0 48%, #adb8b8 48% 63%, #e8ece8 63%);
+    }
+    .drawing-one::before { width: 62%; height: 46%; left: 18%; bottom: 13%; border-width: 18px 2px 2px 18px; transform: perspective(600px) rotateY(-20deg) skewY(-8deg); }
+    .drawing-one::after { width: 33%; height: 56%; right: 10%; top: 13%; border-color: var(--accent); border-width: 12px; transform: rotate(17deg); }
+    .drawing-two {
+      background: radial-gradient(circle at 30% 32%, rgba(185, 210, 217, 0.95) 0 16%, transparent 16.5%), linear-gradient(120deg, #cbd5d2, #eef0eb 62%);
+    }
+    .drawing-two::before { width: 74%; height: 30%; left: 12%; bottom: 18%; border-width: 3px 3px 22px; transform: skewX(-13deg); }
+    .drawing-two::after { width: 44%; height: 62%; right: 8%; top: 8%; border-width: 2px 18px 2px 2px; }
+    .drawing-three {
+      background: linear-gradient(90deg, rgba(15,29,42,.12) 1px, transparent 1px), linear-gradient(rgba(15,29,42,.12) 1px, transparent 1px), #d8d1c8;
+      background-size: 38px 38px;
+    }
+    .drawing-three::before { width: 44%; aspect-ratio: 1; left: 14%; top: 16%; border-radius: 50%; border-width: 16px; }
+    .drawing-three::after { width: 54%; height: 36%; right: 8%; bottom: 13%; border-color: var(--accent); border-width: 3px 3px 18px 18px; transform: rotate(-7deg); }
+    .visual-index {
+      position: absolute;
+      left: 18px;
+      top: 18px;
+      z-index: 2;
+      min-width: 58px;
+      padding: 8px 10px;
+      color: white;
+      background: var(--ink);
+      font-size: 0.76rem;
+      font-weight: 850;
+      letter-spacing: 0.12em;
+    }
+    .visual-placeholder {
+      position: absolute;
+      z-index: 3;
+      left: 18px;
+      right: 18px;
+      bottom: 18px;
+      padding: 14px 16px;
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      color: white;
+      background: rgba(15, 29, 42, 0.92);
+      font-size: 0.78rem;
+    }
+    .visual-placeholder strong { color: var(--acid); }
+    .project-info { padding: 22px 0 18px; display: flex; flex-direction: column; }
+    .project-meta { display: flex; justify-content: space-between; gap: 12px; padding-bottom: 16px; color: var(--muted); border-bottom: 1px solid var(--line); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
+    .project h3 { margin: 56px 0 24px; font-size: clamp(2.25rem, 4.4vw, 4.7rem); line-height: 0.98; letter-spacing: -0.055em; }
+    .project h3.project-title-two-line { font-size: clamp(2.35rem, 2.8vw, 3.15rem); line-height: 1.04; letter-spacing: -0.045em; }
+    .project-title-two-line span { display: block; white-space: nowrap; }
+    .project-description {
+      margin: 0;
+      max-width: 560px;
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.95;
+      letter-spacing: 0.012em;
+      text-align: justify;
+      text-align-last: left;
+      text-justify: inter-character;
+      line-break: strict;
+      text-wrap: pretty;
+    }
+    .project-description.welfare-description { width: 100%; max-width: none; text-wrap: wrap; }
+    .project-data { margin: 42px 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 28px; list-style: none; border-top: 1px solid var(--line); }
+    .project-data li { min-height: 74px; padding: 14px 0 12px; display: flex; flex-direction: column; gap: 5px; border-bottom: 1px solid var(--line); font-size: 0.84rem; line-height: 1.55; }
+    .project-data span { color: var(--muted); font-family: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace; font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; }
+    .project-data strong.two-line > span { display: block; color: inherit; font: inherit; letter-spacing: inherit; text-transform: none; white-space: nowrap; }
+    .project-assets { grid-column: 1 / -1; margin-top: 14px; }
+    .project-assets + .project-assets { margin-top: 28px; }
+    .project-assets-head { margin-bottom: 16px; padding-top: 14px; display: flex; justify-content: space-between; gap: 20px; border-top: 1px solid var(--ink); }
+    .project-assets-head strong { font-size: .92rem; letter-spacing: .03em; }
+    .project-assets-head span { color: var(--muted); font-family: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace; font-size: .7rem; letter-spacing: .08em; text-transform: uppercase; }
+    .project-drawings, .project-renders { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+    .project-drawings figure, .project-renders figure { margin: 0; min-width: 0; }
+    .project-drawings img, .project-renders img { width: 100%; display: block; object-fit: cover; border: 1px solid var(--line); background: white; }
+    .project-drawings img { height: auto; object-fit: contain; }
+    .project-renders img { aspect-ratio: 4 / 3; }
+    .project-drawings figcaption, .project-renders figcaption { padding: 12px 0 0; display: flex; justify-content: space-between; gap: 12px; color: var(--muted); font-family: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace; font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; }
+    .plan-link { display: block; background: white; cursor: zoom-in; }
+    .guojin-floor-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .standard-floor-gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .room-type-gallery { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .room-type-gallery img { aspect-ratio: 1 / 1; padding: 12px; }
+    .room-type-pagination { margin: 0 0 20px; display: flex; justify-content: flex-end; align-items: center; gap: 8px; }
+    .room-type-page-button { min-height: 38px; padding: 0 15px; border: 1px solid var(--ink); color: var(--ink); background: transparent; font: inherit; font-size: 0.76rem; font-weight: 800; letter-spacing: 0.06em; cursor: pointer; }
+    .room-type-page-button:hover, .room-type-page-button:focus-visible { color: white; background: var(--ink); }
+    .room-type-page-button.is-active { color: white; background: var(--ink); box-shadow: 4px 4px 0 var(--accent); }
+    .room-type-page-button:focus-visible { outline: 3px solid var(--acid); outline-offset: 3px; }
+    .room-type-page[hidden] { display: none !important; }
+    .ocean-renders img { aspect-ratio: 16 / 10; }
+    .guojin-renders { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+    .guojin-renders img { aspect-ratio: 3 / 2; }
+    .bairuifu-primary-renders, .bairuifu-service-renders { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+    .bairuifu-primary-renders img { aspect-ratio: 3 / 2; }
+    .bairuifu-primary-renders figure:first-child { grid-column: 1 / -1; }
+    .bairuifu-primary-renders figure:first-child img { aspect-ratio: 16 / 9; }
+    .bairuifu-service-renders img { aspect-ratio: 4 / 3; }
+    .hongmeng-floor-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+    .hongmeng-floor-gallery figure:last-child { grid-column: 1 / -1; }
+    .welfare-renders { display: block; }
+    .welfare-renders figure { width: 100%; }
+    .welfare-renders img { aspect-ratio: 16 / 9; }
+    .project-video { overflow: hidden; border: 1px solid var(--ink); background: var(--ink); }
+    .project-video video { width: 100%; aspect-ratio: 16 / 9; display: block; object-fit: cover; background: #000; }
+    .project-video-note { padding: 12px 14px; display: flex; justify-content: space-between; gap: 16px; color: white; font-family: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace; font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; }
+    .project-video-note span:last-child { color: var(--acid); }
+
+    #profile { position: relative; overflow: hidden; }
+    #profile::before {
+      content: "PROFILE";
+      position: absolute;
+      right: -0.08em;
+      top: 0.15em;
+      color: rgba(15, 29, 42, 0.035);
+      font-size: 20vw;
+      line-height: 1;
+      font-weight: 900;
+      letter-spacing: -0.08em;
+      pointer-events: none;
+    }
+    .profile-grid { position: relative; display: grid; grid-template-columns: minmax(260px, 320px) minmax(0, 1fr); gap: clamp(58px, 6vw, 96px); align-items: start; }
+    .portrait-placeholder {
+      min-height: 0;
+      padding: 0;
+      border: 1px solid var(--ink);
+      background: var(--ink);
+      color: white;
+    }
+    .portrait-photo { margin: 0; aspect-ratio: 4 / 5; overflow: hidden; background: #dfe7e7; }
+    .portrait-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+    .portrait-info { padding: 26px 28px 28px; }
+    .portrait-info .eyebrow { margin: 0 0 14px; color: var(--acid); }
+    .portrait-info h3 { margin: 0; font-size: clamp(1.55rem, 2vw, 1.9rem); line-height: 1.05; letter-spacing: -0.03em; }
+    .portrait-role { margin: 10px 0 0; color: #c5cdd2; font-size: 0.92rem; line-height: 1.6; }
+    .portrait-meta { margin: 24px 0 0; padding: 18px 0 0; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; border-top: 1px solid rgba(255,255,255,.24); }
+    .portrait-meta div { min-width: 0; }
+    .portrait-meta dt { margin: 0 0 7px; color: var(--acid); font-family: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace; font-size: 0.66rem; font-weight: 800; letter-spacing: 0.1em; }
+    .portrait-meta dd { margin: 0; color: white; font-size: 0.78rem; font-weight: 750; line-height: 1.55; }
+    .resume-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 44px 64px; }
+    .resume-grid > div { display: contents; }
+    .resume-grid > div:first-child > .resume-block:first-child { grid-column: 1; grid-row: 1; }
+    .resume-grid > div:first-child > .resume-block:nth-child(2) { grid-column: 1; grid-row: 2; margin-top: 0 !important; }
+    .resume-grid > div:nth-child(2) > .resume-block:first-child { grid-column: 2; grid-row: 1; }
+    .resume-grid > div:nth-child(2) > .resume-block:nth-child(2) { grid-column: 2; grid-row: 2; margin-top: 0 !important; }
+    .resume-block { padding-top: 20px; border-top: 2px solid var(--ink); }
+    .resume-block h3 { margin: 0 0 28px; font-size: 0.88rem; letter-spacing: 0.14em; text-transform: uppercase; }
+    .timeline-item { position: relative; padding: 0 0 34px 22px; border-left: 1px solid var(--line); }
+    .timeline-item::before { content: ""; position: absolute; left: -5px; top: 7px; width: 9px; height: 9px; background: var(--accent); }
+    .timeline-item time { color: var(--muted); font-size: 0.78rem; font-weight: 700; }
+    .timeline-item strong { display: block; margin-top: 6px; font-size: 1.02rem; line-height: 1.45; }
+    .timeline-item p {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.88;
+      letter-spacing: 0.006em;
+      text-align: justify;
+      text-align-last: left;
+      text-justify: inter-character;
+      line-break: strict;
+      text-wrap: pretty;
+    }
+    .skill-list { display: grid; gap: 14px; }
+    .skill { display: flex; justify-content: space-between; gap: 18px; padding-bottom: 10px; border-bottom: 1px solid var(--line); font-size: 0.9rem; }
+    .skill span:last-child { color: var(--muted); text-align: right; }
+
+    #contact { padding: 0; color: white; background: var(--ink); }
+    .contact-grid { display: grid; grid-template-columns: 1.35fr 0.65fr; min-height: 640px; }
+    .contact-main { padding: 100px max(30px, calc((100vw - var(--max)) / 2)); padding-right: 60px; display: flex; flex-direction: column; justify-content: space-between; }
+    .contact-title { margin: 0; max-width: 780px; font-size: clamp(3.2rem, 8vw, 8rem); line-height: 0.88; letter-spacing: -0.065em; }
+    .contact-title span { color: var(--accent); }
+    .contact-copy { max-width: 580px; margin: 34px 0; color: #c5cdd2; font-size: 1.08rem; }
+    .contact-links { display: flex; flex-wrap: wrap; gap: 12px; }
+    .contact-links .button { border-color: rgba(255,255,255,.6); color: white; }
+    .contact-links .button.primary { color: var(--ink); background: var(--acid); border-color: var(--acid); }
+    .qr-panel { padding: 50px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--ink); background: var(--acid); text-align: center; }
+    .qr-frame { width: min(300px, 100%); aspect-ratio: 1; padding: 16px; background: white; box-shadow: 12px 12px 0 var(--accent); }
+    .qr-frame a { width: 100%; height: 100%; display: block; }
+    .qr-frame img { width: 100%; height: 100%; display: block; object-fit: contain; }
+    .qr-panel h3 { margin: 34px 0 8px; font-size: 1.5rem; }
+    .qr-panel p { margin: 0; max-width: 300px; font-size: 0.88rem; }
+    .qr-download { margin-top: 18px; font-size: 0.82rem; font-weight: 800; text-decoration: underline; text-underline-offset: 5px; }
+    footer { padding: 22px 0; color: #aab5bd; background: #08131d; font-size: 0.75rem; }
+    footer .shell { display: flex; justify-content: space-between; gap: 20px; }
+
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity 550ms ease, transform 550ms ease; }
+    .reveal.is-visible { opacity: 1; transform: none; }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+
+    @media (max-width: 900px) {
+      .section-head, .hero-grid, .project, .profile-grid, .contact-grid { grid-template-columns: 1fr; }
+      .hero { min-height: auto; }
+      .hero h1 { font-size: clamp(4.2rem, 19vw, 8rem); }
+      .hero-plate { width: 100%; min-height: 0; aspect-ratio: 2560 / 1706; justify-self: stretch; }
+      .project:nth-child(even) .project-visual, .project:nth-child(even) .project-assets { order: initial; }
+      .project-visual { min-height: 420px; }
+      .profile-grid { gap: 40px; }
+      .contact-main { min-height: 570px; padding: 80px 30px; }
+      .qr-panel { min-height: 520px; }
+      .standard-floor-gallery { grid-template-columns: 1fr; }
+      .room-type-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 680px) {
+      .shell { width: min(calc(100% - 28px), var(--max)); }
+      section { padding: 84px 0; }
+      .section-head { margin-bottom: 44px; gap: 22px; }
+      .profile-lead { margin: -4px 0 52px; font-size: 1.18rem; line-height: 1.75; }
+      .nav { min-height: 62px; }
+      .menu-button { display: block; }
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 62px;
+        left: 0;
+        right: 0;
+        padding: 18px 20px 24px;
+        flex-direction: column;
+        gap: 8px;
+        border-bottom: 1px solid var(--line);
+        background: var(--paper);
+      }
+      .nav-links.open { display: flex; }
+      .nav-links a { padding: 10px 0; }
+      .hero { padding-top: 34px; }
+      .hero h1 { gap: 14px; }
+      .hero h1 .outline { font-size: 0.64em; }
+      .hero-top { align-items: flex-start; }
+      .availability { max-width: 120px; text-align: right; line-height: 1.4; }
+      .hero-bottom { grid-template-columns: 1fr 1fr; }
+      .project-list { gap: 62px; }
+      .project-visual { min-height: 350px; }
+      .project-data { grid-template-columns: 1fr; }
+      .project-drawings, .project-renders { grid-template-columns: 1fr; gap: 30px; }
+      .room-type-gallery { grid-template-columns: 1fr; }
+      .visual-placeholder { flex-direction: column; gap: 4px; }
+      .project h3 { margin-top: 50px; }
+      .project h3.project-title-two-line { font-size: clamp(2.05rem, 11vw, 2.8rem); }
+      .resume-grid { grid-template-columns: 1fr; }
+      .resume-grid > div > .resume-block { grid-column: 1 !important; grid-row: auto !important; }
+      .resume-grid > div:first-child > .resume-block:first-child { order: 1; }
+      .resume-grid > div:first-child > .resume-block:nth-child(2) { order: 2; }
+      .resume-grid > div:nth-child(2) > .resume-block:first-child { order: 3; }
+      .resume-grid > div:nth-child(2) > .resume-block:nth-child(2) { order: 4; }
+      .portrait-placeholder { min-height: 0; max-width: 340px; }
+      .contact-main { padding-inline: 22px; }
+      .qr-panel { padding: 44px 26px; min-height: 480px; }
+      footer .shell { flex-direction: column; }
+      .hero-copy-line { display: inline; white-space: normal; }
+    }
+
+    /* Preserve source image proportions and give project imagery deliberate breathing room. */
+    .project-renders img {
+      height: auto;
+      aspect-ratio: auto;
+      object-fit: contain;
+    }
+    .project-drawings img, .plan-link { background: transparent; }
+    .project-drawings img { height: auto; aspect-ratio: auto; object-fit: contain; }
+    .ocean-renders { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; align-items: start; }
+    .guojin-renders { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; align-items: start; }
+    .bairuifu-primary-renders, .bairuifu-service-renders { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; align-items: start; }
+    .bairuifu-primary-renders figure:first-child { grid-column: 1 / -1; }
+    .welfare-renders img { width: 100%; height: auto; aspect-ratio: auto; object-fit: contain; }
+    .project-visual.ocean-cover { min-height: 0; aspect-ratio: 5 / 4; align-self: start; }
+    .project-visual.guojin-cover { min-height: 0; aspect-ratio: 1534 / 1025; align-self: start; }
+    .project-visual.hongmeng-cover { min-height: 0; aspect-ratio: 3 / 2; align-self: start; }
+    .project-visual.bairuifu-cover { width: min(128%, 620px); min-height: 0; margin-top: 92px; aspect-ratio: 16 / 9; justify-self: end; align-self: start; }
+    .project-visual.welfare-cover { width: min(100%, 620px); min-height: 0; aspect-ratio: 4 / 5; justify-self: center; align-self: start; }
+    .hongmeng-floor-gallery figure { display: flex; flex-direction: column; }
+    .hongmeng-floor-gallery figure:nth-child(-n + 4) { width: min(82%, 440px); justify-self: center; }
+    .hongmeng-floor-gallery .plan-link { width: 100%; display: grid; place-items: center; overflow: hidden; }
+    .hongmeng-floor-gallery figure:nth-child(-n + 4) .plan-link { aspect-ratio: 2100 / 2745; }
+    .hongmeng-floor-gallery figure:nth-child(5) .plan-link { aspect-ratio: 2100 / 1204; }
+    .hongmeng-floor-gallery .plan-link img { width: 100%; height: 100%; aspect-ratio: auto; object-fit: contain; }
+    .room-type-gallery .plan-link { width: 100%; aspect-ratio: 1 / 1; padding: 10px; display: grid; place-items: center; overflow: hidden; }
+    .room-type-gallery .plan-link img { width: 100%; height: 100%; padding: 0; aspect-ratio: auto; object-fit: contain; }
+
+    @media (max-width: 900px) {
+      .project-visual.ocean-cover, .project-visual.welfare-cover, .project-visual.guojin-cover,
+      .project-visual.bairuifu-cover, .project-visual.hongmeng-cover { min-height: 0; }
+      .project-visual.bairuifu-cover { width: min(100%, 620px); margin-top: 0; justify-self: center; }
+      .project-visual.welfare-cover { width: min(100%, 620px); }
+    }
+
+    @media (max-width: 680px) {
+      .ocean-renders, .guojin-renders, .bairuifu-primary-renders, .bairuifu-service-renders { grid-template-columns: 1fr; }
+      .bairuifu-primary-renders figure:first-child { grid-column: auto; }
+      .hongmeng-floor-gallery figure:nth-child(-n + 4) { width: 100%; }
+    }
+
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header>
+    <nav class="nav shell" aria-label="主导航">
+      <a class="brand" href="#top" aria-label="返回首页">
+        <span class="brand-mark">A/01</span>
+        <span>孙斌 / Robin · 建筑作品集</span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav-links">菜单</button>
+      <div class="nav-links" id="nav-links">
+        <a href="#projects">项目</a>
+        <a href="#profile">简历</a>
+        <a href="#contact">联系</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="hero shell" id="top">
+      <div class="hero-top">
+        <div class="hero-label">Architecture Portfolio · 2026</div>
+        <div class="availability">青岛 / 烟台 · 2027年6月可到岗</div>
+      </div>
+
+      <div class="hero-grid">
+        <div>
+          <h1><span class="hero-name">孙斌</span><span class="outline">建筑</span></h1>
+          <p class="hero-copy"><span class="hero-copy-line">建筑学硕士在读，求职方向为建筑设计师与建筑方案设计师，</span><span class="hero-copy-line">聚焦既有建筑改造与养老建筑设计，积累了现场测绘与</span><span class="hero-copy-line">问题诊断、方案汇报及施工预算协作等实践经验。</span></p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">查看代表项目</a>
+            <a class="button" href="#profile">查看个人简历</a>
+          </div>
+        </div>
+        <div class="hero-plate" aria-label="青岛鸿蒙智行体验店建筑夜景效果图">
+          <img class="hero-cover-image" src="assets/hongmeng-store/home-hero.png" alt="青岛鸿蒙智行体验店建筑夜景效果图" width="2560" height="1706">
+          <span class="plate-note">PROFILE / ROBIN SUNBIN</span>
+          <div class="plate-name">建筑设计师 × 建筑方案设计师</div>
+        </div>
+      </div>
+
+      <div class="hero-bottom" aria-label="个人信息摘要">
+        <div class="fact"><small>Location</small><strong><span>所在地：青岛</span><span>意向城市：青岛 / 烟台</span></strong></div>
+        <div class="fact"><small>Target Role</small><strong><span>建筑设计师</span><span>建筑方案设计师</span></strong></div>
+        <div class="fact"><small>Education</small><strong>青岛理工大学 · 建筑学硕士 · 2027 届</strong></div>
+        <div class="fact"><small>Contact</small><strong><span>邮箱：a43386326@gmail.com</span><span>微信：13792506098</span></strong></div>
+      </div>
+    </div>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <div class="ticker-group"><span>建筑设计</span><span>既有建筑改造</span><span>养老建筑</span><span>现场测绘</span><span>方案汇报</span><span>施工预算</span></div>
+        <div class="ticker-group" aria-hidden="true"><span>建筑设计</span><span>既有建筑改造</span><span>养老建筑</span><span>现场测绘</span><span>方案汇报</span><span>施工预算</span></div>
+      </div>
+    </div>
+
+    <section id="projects">
+      <div class="shell">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">01 / Selected Works</p>
+            <h2 class="section-title">代表<span>项目</span></h2>
+          </div>
+        </div>
+
+        <div class="project-list">
+          <article class="project reveal">
+            <div class="project-visual has-photo ocean-cover">
+              <img src="assets/ocean-institute/lab-render-main.jpg" alt="中国科学院海洋研究所6号楼205-3实验室第二视角效果图" width="1162" height="932">
+              <span class="visual-index">P / 01</span>
+              <div class="visual-caption"><strong>6号楼实验室 205-3</strong><span>第二视角 / 已建成</span></div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><span>实验室</span><span>2024.10–11</span></div>
+              <h3 class="project-title-two-line"><span>中科院海洋研究所</span><span>4#、6# 改造</span></h3>
+              <p class="project-description">以“以适用为主、兼顾舒适设计”为核心改造策略，针对原有空间与使用者需求不匹配、空间设计存在缺陷等现场问题，独立完成 10 张平面图与六套平面设计方案，并参与甲方汇报。项目进入施工和预算阶段，现已建成。</p>
+              <ul class="project-data">
+                <li><span>职责</span><strong class="two-line"><span>测绘、平面设计、</span><span>效果图渲染、甲方汇报</span></strong></li>
+                <li><span>场地</span><strong>青岛</strong></li>
+                <li><span>团队</span><strong>个人</strong></li>
+                <li><span>规模</span><strong>3 层 / 全楼改造</strong></li>
+                <li><span>阶段</span><strong>已建成</strong></li>
+                <li><span>成果</span><strong>10 张平面图 / 6 套平面设计方案</strong></li>
+                <li><span>策略</span><strong>以适用为主，兼顾舒适设计</strong></li>
+                <li><span>内容</span><strong class="two-line"><span>现场测绘、问题诊断、</span><span>平面优化、立面更新</span></strong></li>
+              </ul>
+            </div>
+            <div class="project-assets">
+              <div class="project-assets-head"><strong>空间效果图</strong><span>Selected Renderings / 6# Building</span></div>
+              <div class="project-renders ocean-renders" aria-label="6号楼实验室精选空间效果图">
+                <figure><img src="assets/ocean-institute/render-103-right.jpg" alt="6号楼一层103接待空间右侧视角效果图" width="860" height="581"><figcaption><span>接待空间</span><span>一层 / 103</span></figcaption></figure>
+                <figure><img src="assets/ocean-institute/render-meeting-105-1.jpg" alt="6号楼一层105-1会议室左侧视角效果图" width="865" height="581"><figcaption><span>一层会议室</span><span>105-1 / 左侧视角</span></figcaption></figure>
+                <figure><img src="assets/ocean-institute/render-lab-205-3.jpg" alt="6号楼二层205-3实验室第一视角效果图" width="1065" height="853"><figcaption><span>实验室 205-3</span><span>二层 / 第一视角</span></figcaption></figure>
+              </div>
+            </div>
+            <div class="project-assets">
+              <div class="project-assets-head"><strong>平面设计</strong><span>Floor Plans / 1:100</span></div>
+              <div class="project-drawings" aria-label="6号楼实验室一至三层平面图">
+                <figure><a class="plan-link" href="assets/ocean-institute/floor-1.png" target="_blank" rel="noopener" aria-label="打开6号楼实验室一层平面图大图"><img src="assets/ocean-institute/floor-1.png" alt="6号楼实验室一层平面图" width="1297" height="870"></a><figcaption><span>一层平面图</span></figcaption></figure>
+                <figure><a class="plan-link" href="assets/ocean-institute/floor-2.png" target="_blank" rel="noopener" aria-label="打开6号楼实验室二层平面图大图"><img src="assets/ocean-institute/floor-2.png" alt="6号楼实验室二层平面图" width="1230" height="830"></a><figcaption><span>二层平面图</span></figcaption></figure>
+                <figure><a class="plan-link" href="assets/ocean-institute/floor-3.png" target="_blank" rel="noopener" aria-label="打开6号楼实验室三层平面图大图"><img src="assets/ocean-institute/floor-3.png" alt="6号楼实验室三层平面图" width="1242" height="830"></a><figcaption><span>三层平面图</span></figcaption></figure>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-visual has-photo welfare-cover">
+              <img src="assets/welfare-home/main-detail.jpg" alt="青岛福彩养老院4号楼公共活动空间竖向效果图" width="1023" height="1279">
+              <span class="visual-index">P / 02</span>
+              <div class="visual-caption"><strong>4号楼公共活动空间效果图</strong><span>3 层 / 整栋楼改造 / 已建成</span></div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><span>养老建筑改造</span><span>2025.11</span></div>
+              <h3>青岛福彩养老院<br>4# 改造</h3>
+              <p class="project-description welfare-description">结合适老化使用需求，完成空间功能分析、平面优化、立面改造及汇报文本，并参与甲方汇报；个人完成 3 张图纸及 2 套方案，提升既有养老建筑空间的适用性与方案落地性。项目现已建成。</p>
+              <ul class="project-data">
+                <li><span>职责</span><strong>核心设计参与 / 甲方汇报</strong></li>
+                <li><span>场地</span><strong>青岛</strong></li>
+                <li><span>团队</span><strong>2 人</strong></li>
+                <li><span>规模</span><strong>3 层 / 整栋楼改造</strong></li>
+                <li><span>阶段</span><strong>已建成</strong></li>
+                <li><span>成果</span><strong>3 张图纸 / 2 套方案</strong></li>
+                <li><span>内容</span><strong>功能分析、平面优化、立面改造、汇报文本</strong></li>
+              </ul>
+            </div>
+            <div class="project-assets">
+              <div class="project-assets-head"><strong>公共活动空间效果图</strong><span>Selected Renderings / 4# Building</span></div>
+              <div class="project-renders welfare-renders" aria-label="青岛福彩养老院4号楼公共活动空间横向效果图">
+                <figure><img src="assets/welfare-home/sunlit-reading-room.png" alt="福彩养老院4号楼阳光绿意公共阅读空间效果图" width="1672" height="940"><figcaption><span>阳光绿意阅读空间</span><span>横向空间视角</span></figcaption></figure>
+              </div>
+            </div>
+            <div class="project-assets">
+              <div class="project-assets-head"><strong>方案漫游视频</strong><span>Design Walkthrough / 00:59</span></div>
+              <div class="project-video">
+                <video controls playsinline preload="metadata" poster="assets/welfare-home/view-06.jpg" aria-label="青岛福彩养老院4号楼改造方案漫游视频">
+                  <source src="assets/welfare-home/welfare-renovation-720p.mp4" type="video/mp4">
+                  当前浏览器不支持视频播放，可下载网页素材后观看。
+                </video>
+                <div class="project-video-note"><span>4# 楼空间改造漫游</span><span>720p / H.264</span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-visual has-photo guojin-cover">
+              <img src="assets/guojin-home/render-aerial.jpg" alt="即墨国金养老院总体鸟瞰效果图" width="1534" height="1025">
+              <span class="visual-index">P / 03</span>
+              <div class="visual-caption"><strong>总体鸟瞰效果图</strong><span>养老院建筑形象 / 总体布局</span></div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><span>养老建筑设计</span><span>2024.11</span></div>
+              <h3>即墨国金<br>养老院项目</h3>
+              <p class="project-description">参与养老院建设项目，协助完成现场测绘、空间功能分析、平面设计与立面设计，并参与甲方汇报；通过一层、二层、标准层及居室户型图梳理公共空间、护理单元与居住空间的功能组织。项目已进入施工或预算阶段。</p>
+              <ul class="project-data">
+                <li><span>职责</span><strong>设计协作</strong></li>
+                <li><span>场地</span><strong>青岛</strong></li>
+                <li><span>团队</span><strong>7 人</strong></li>
+                <li><span>阶段</span><strong>已进入施工或预算阶段</strong></li>
+                <li><span>图纸</span><strong>一层、二层、标准层、居室户型</strong></li>
+                <li><span>内容</span><strong>空间分析、平面与立面设计</strong></li>
+              </ul>
+            </div>
+            <div class="project-assets">
+              <div class="project-assets-head"><strong>建筑效果图</strong><span>Selected Renderings / Guojin Elderly Care</span></div>
+              <div class="project-renders guojin-renders" aria-label="即墨国金养老院建筑效果图">
+                <figure><img src="assets/guojin-home/render-building.jpg" alt="即墨国金养老院主体建筑近景效果图" width="1534" height="1025"><figcaption><span>主体建筑近景</span><span>建筑形象</span></figcaption></figure>
+                <figure><img src="assets/guojin-home/render-linkway.jpg" alt="即墨国金养老院主体建筑与连廊效果图" width="1534" height="1025"><figcaption><span>主体建筑与连廊</span><span>入口空间</span></figcaption></figure>
+              </div>
+            </div>
+            <div class="project-assets">
+              <div class="project-assets-head"><strong>各层平面图</strong><span>Floor Plans / Guojin Elderly Care</span></div>
+              <div class="project-drawings guojin-floor-gallery" aria-label="即墨国金养老院一层与二层平面图">
+                <figure><a class="plan-link" href="assets/guojin-home/floor-1.png" target="_blank" rel="noopener" aria-label="打开即墨国金养老院一层平面图大图"><img src="assets/guojin-home/floor-1.png" alt="即墨国金养老院一层平面图" width="1395" height="1181"></a><figcaption><span>一层平面图</span><span>点击查看大图</span></figcaption></figure>
+                <figure><a class="plan-link" href="assets/guojin-home/floor-2.png" target="_blank" rel="noopener" aria-label="打开即墨国金养老院二层平面图大图"><img src="assets/guojin-home/floor-2.png" alt="即墨国金养老院二层平面图" width="1395" height="1181"></a><figcaption><span>二层平面图</span><span>点击查看大图</span></figcaption></figure>
+              </div>
+            </div>
+            <div class="project-assets">
+              <div class="project-assets-head"><strong>标准层平面图</strong><span>Standard Floors / 3 Layouts</span></div>
+              <div class="project-drawings standard-floor-gallery" aria-label="即墨国金养老院三张标准层平面图">
+                <figure><a class="plan-link" href="assets/guojin-home/standard-01.png" target="_blank" rel="noopener" aria-label="打开即墨国金养老院标准层平面图一"><img src="assets/guojin-home/standard-01.png" alt="即墨国金养老院标准层平面图一" width="958" height="434"></a><figcaption><span>标准层 01</span><span>点击查看</span></figcaption></figure>
+                <figure><a class="plan-link" href="assets/guojin-home/standard-02.png" target="_blank" rel="noopener" aria-label="打开即墨国金养老院标准层平面图二"><img src="assets/guojin-home/standard-02.png" alt="即墨国金养老院标准层平面图二" width="954" height="415"></a><figcaption><span>标准层 02</span><span>点击查看</span></figcaption></figure>
+                <figure><a class="plan-link" href="assets/guojin-home/standard-03.png" target="_blank" rel="noopener" aria-label="打开即墨国金养老院标准层平面图三"><img src="assets/guojin-home/standard-03.png" alt="即墨国金养老院标准层平面图三" width="958" height="378"></a><figcaption><span>标准层 03</span><span>点击查看</span></figcaption></figure>
+              </div>
+            </div>
+            <div class="project-assets">
+              <div class="project-assets-head"><strong>居室户型图</strong><span>Room Types / 2 Pages / 8 Layouts</span></div>
+              <div class="room-type-pagination" role="tablist" aria-label="切换居室户型图页码">
+                <button class="room-type-page-button is-active" type="button" role="tab" aria-selected="true" aria-controls="room-type-page-1" data-room-type-page="1">01 · 户型 01–04</button>
+                <button class="room-type-page-button" type="button" role="tab" aria-selected="false" aria-controls="room-type-page-2" data-room-type-page="2">02 · 户型 05–08</button>
+              </div>
+              <div id="room-type-page-1" class="project-drawings room-type-gallery room-type-page" role="tabpanel" aria-label="即墨国金养老院居室户型图第一页" data-room-type-panel="1">
+                <figure><a class="plan-link" href="assets/guojin-home/room-type-01.png" target="_blank" rel="noopener" aria-label="打开即墨国金养老院居室户型一"><img src="assets/guojin-home/room-type-01.png" alt="即墨国金养老院居室户型一" width="1380" height="1362"></a><figcaption><span>户型 01</span><span>套间组合</span></figcaption></figure>
+                <figure><a class="plan-link" href="assets/guojin-home/room-type-02.png" target="_blank" rel="noopener" aria-label="打开即墨国金养老院居室户型二"><img src="assets/guojin-home/room-type-02.png" alt="即墨国金养老院居室户型二" width="1380" height="1363"></a><figcaption><span>户型 02</span><span>套间组合</span></figcaption></figure>
+                <figure><a class="plan-link" href="assets/guojin-home/room-type-03.png" target="_blank" rel="noopener" aria-label="打开即墨国金养老院居室户型三"><img src="assets/guojin-home/room-type-03.png" alt="即墨国金养老院居室户型三" width="1059" height="1050"></a><figcaption><span>户型 03</span><span>套间组合</span></figcaption></figure>
+                <figure><a class="plan-link" href="assets/guojin-home/room-type-04.png" target="_blank" rel="noopener" aria-label="打开即墨国金养老院居室户型四"><img src="assets/guojin-home/room-type-04.png" alt="即墨国金养老院居室户型四" width="737" height="1050"></a><figcaption><span>户型 04</span><span>套间组合</span></figcaption></figure>
+              </div>
+              <div id="room-type-page-2" class="project-drawings room-type-gallery room-type-page" role="tabpanel" aria-label="即墨国金养老院居室户型图第二页" data-room-type-panel="2" hidden>
+                <figure><a class="plan-link" href="assets/guojin-home/room-type-05.png" target="_blank" rel="noopener" aria-label="打开即墨国金养老院居室户型五"><img src="assets/guojin-home/room-type-05.png" alt="即墨国金养老院居室户型五" width="1388" height="859"></a><figcaption><span>户型 05</span><span>三人间组合</span></figcaption></figure>
+                <figure><a class="plan-link" href="assets/guojin-home/room-type-06.png" target="_blank" rel="noopener" aria-label="打开即墨国金养老院居室户型六"><img src="assets/guojin-home/room-type-06.png" alt="即墨国金养老院居室户型六" width="1380" height="852"></a><figcaption><span>户型 06</span><span>三人间组合</span></figcaption></figure>
+                <figure><a class="plan-link" href="assets/guojin-home/room-type-07.png" target="_blank" rel="noopener" aria-label="打开即墨国金养老院居室户型七"><img src="assets/guojin-home/room-type-07.png" alt="即墨国金养老院居室户型七" width="1380" height="857"></a><figcaption><span>户型 07</span><span>对称套间</span></figcaption></figure>
+                <figure><a class="plan-link" href="assets/guojin-home/room-type-08.png" target="_blank" rel="noopener" aria-label="打开即墨国金养老院居室户型八"><img src="assets/guojin-home/room-type-08.png" alt="即墨国金养老院居室户型八" width="1381" height="852"></a><figcaption><span>户型 08</span><span>双人间组合</span></figcaption></figure>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-visual has-photo bairuifu-cover">
+              <img src="assets/bairuifu-home/main-exterior.jpg" alt="佰瑞福养老院建筑入口效果图" width="1672" height="941">
+              <span class="visual-index">P / 04</span>
+              <div class="visual-caption"><strong>养老综合服务中心</strong><span>建筑入口 / 公共界面</span></div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><span>养老建筑设计</span><span>2024.06</span></div>
+              <h3>佰瑞福<br>养老院项目</h3>
+              <p class="project-description">参与养老院建设项目，协助完成现场测绘、空间功能分析、平面设计与立面设计，围绕适老化需求推进空间组织与方案表达；效果图呈现建筑入口、护理休息、室内交通、共享活动与配套服务等场景。项目已进入施工或预算阶段。</p>
+              <ul class="project-data">
+                <li><span>职责</span><strong>设计协作</strong></li>
+                <li><span>场地</span><strong>青岛</strong></li>
+                <li><span>团队</span><strong>8 人</strong></li>
+                <li><span>阶段</span><strong>已进入施工或预算阶段</strong></li>
+                <li><span>展示</span><strong>建筑外观、康养空间、配套服务空间</strong></li>
+                <li><span>内容</span><strong>现场测绘、空间分析、平面与立面设计</strong></li>
+              </ul>
+            </div>
+            <div class="project-assets">
+              <div class="project-assets-head"><strong>康养与公共空间效果图</strong><span>Care &amp; Community Spaces / 5 Views</span></div>
+              <div class="project-renders bairuifu-primary-renders" aria-label="佰瑞福养老院康养与公共空间效果图">
+                <figure><img src="assets/bairuifu-home/public-corridor.jpg" alt="佰瑞福养老院户外公共连廊效果图" width="1672" height="941"><figcaption><span>户外公共连廊</span><span>交往与休憩</span></figcaption></figure>
+                <figure><img src="assets/bairuifu-home/care-corridor.jpg" alt="佰瑞福养老院康养空间走廊效果图" width="1586" height="992"><figcaption><span>康养空间走廊</span><span>室内绿化</span></figcaption></figure>
+                <figure><img src="assets/bairuifu-home/care-room.jpg" alt="佰瑞福养老院护理休息空间效果图" width="1586" height="992"><figcaption><span>护理休息空间</span><span>床位区域</span></figcaption></figure>
+                <figure><img src="assets/bairuifu-home/tea-bar.jpg" alt="佰瑞福养老院茶水与书画活动空间效果图" width="1586" height="992"><figcaption><span>茶水与书画空间</span><span>共享活动</span></figcaption></figure>
+                <figure><img src="assets/bairuifu-home/lounge.jpg" alt="佰瑞福养老院共享起居空间效果图" width="1672" height="941"><figcaption><span>休闲起居空间</span><span>共享客厅</span></figcaption></figure>
+              </div>
+            </div>
+            <div class="project-assets">
+              <div class="project-assets-head"><strong>配套服务空间效果图</strong><span>Supporting Services / 2 Views</span></div>
+              <div class="project-renders bairuifu-service-renders" aria-label="佰瑞福养老院配套服务空间效果图">
+                <figure><img src="assets/bairuifu-home/retail-aisle.jpg" alt="佰瑞福养老院配套零售空间商品陈列效果图" width="1448" height="1086"><figcaption><span>配套零售空间</span><span>商品陈列</span></figcaption></figure>
+                <figure><img src="assets/bairuifu-home/retail-counter.jpg" alt="佰瑞福养老院配套服务前厅效果图" width="1448" height="1086"><figcaption><span>配套服务前厅</span><span>收银与展示</span></figcaption></figure>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-visual has-photo hongmeng-cover">
+              <img src="assets/hongmeng-store/night-exterior.jpg" alt="青岛鸿蒙智行体验店建筑夜景效果图" width="2400" height="1599">
+              <span class="visual-index">P / 05</span>
+              <div class="visual-caption"><strong>建筑夜景效果图</strong><span>汽车体验店 / 在建</span></div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><span>汽车展示与服务建筑</span><span>项目在建</span></div>
+              <h3 class="project-title-two-line"><span>青岛鸿蒙智行</span><span>体验店项目</span></h3>
+              <p class="project-description">围绕汽车展示、客户洽谈、办公、维修与停车等复合功能进行空间组织与流线梳理，完成一至五层平面方案及建筑夜景表达。个人完成 1 套方案，共 6 张图纸；项目当前处于在建阶段。</p>
+              <ul class="project-data">
+                <li><span>职责</span><strong>方案设计 / 图纸绘制</strong></li>
+                <li><span>场地</span><strong>青岛 · 黄岛</strong></li>
+                <li><span>规模</span><strong>5 层</strong></li>
+                <li><span>阶段</span><strong>在建</strong></li>
+                <li><span>成果</span><strong>1 套方案 / 6 张图纸</strong></li>
+                <li><span>内容</span><strong>流线分析、平面设计、效果表达</strong></li>
+              </ul>
+            </div>
+            <div class="project-assets">
+              <div class="project-assets-head"><strong>一至五层平面图</strong><span>Floor Plans / 1F–5F</span></div>
+              <div class="project-drawings hongmeng-floor-gallery" aria-label="青岛鸿蒙智行体验店一至五层平面图">
+                <figure><a class="plan-link" href="assets/hongmeng-store/floor-1.png" target="_blank" rel="noopener" aria-label="打开青岛鸿蒙智行体验店一层平面图大图"><img src="assets/hongmeng-store/floor-1.png" alt="青岛鸿蒙智行体验店一层平面图" width="2008" height="2484"></a><figcaption><span>一层平面图</span><span>展示与客户服务</span></figcaption></figure>
+                <figure><a class="plan-link" href="assets/hongmeng-store/floor-2.png" target="_blank" rel="noopener" aria-label="打开青岛鸿蒙智行体验店二层平面图大图"><img src="assets/hongmeng-store/floor-2.png" alt="青岛鸿蒙智行体验店二层平面图" width="1788" height="2566"></a><figcaption><span>二层平面图</span><span>复合服务空间</span></figcaption></figure>
+                <figure><a class="plan-link" href="assets/hongmeng-store/floor-3.png" target="_blank" rel="noopener" aria-label="打开青岛鸿蒙智行体验店三层平面图大图"><img src="assets/hongmeng-store/floor-3.png" alt="青岛鸿蒙智行体验店三层平面图" width="1788" height="2456"></a><figcaption><span>三层平面图</span><span>停车与服务空间</span></figcaption></figure>
+                <figure><a class="plan-link" href="assets/hongmeng-store/floor-4.png" target="_blank" rel="noopener" aria-label="打开青岛鸿蒙智行体验店四层平面图大图"><img src="assets/hongmeng-store/floor-4.png" alt="青岛鸿蒙智行体验店四层平面图" width="1788" height="2456"></a><figcaption><span>四层平面图</span><span>停车与办公空间</span></figcaption></figure>
+                <figure><a class="plan-link" href="assets/hongmeng-store/floor-5.png" target="_blank" rel="noopener" aria-label="打开青岛鸿蒙智行体验店五层平面图大图"><img src="assets/hongmeng-store/floor-5.png" alt="青岛鸿蒙智行体验店五层平面图" width="1762" height="778"></a><figcaption><span>五层平面图</span><span>办公与维修空间</span></figcaption></figure>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="profile">
+      <div class="shell">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">02 / Profile & Resume</p>
+            <h2 class="section-title">关于<span>我</span></h2>
+          </div>
+        </div>
+
+        <p class="profile-lead">孙斌（Robin / SunBin）是建筑学硕士在读学生，关注既有建筑改造、养老建筑设计与建筑光环境研究。拥有现场测绘、问题诊断、空间功能分析、平面优化、立面更新、方案汇报和施工预算协作经验，曾独立完成科研办公与养老院改造项目。</p>
+
+        <div class="profile-grid">
+          <aside class="portrait-placeholder reveal">
+            <div class="portrait-photo"><img src="profile.jpg" alt="孙斌证件照" width="900" height="1200"></div>
+            <div class="portrait-info">
+              <p class="eyebrow">Portrait / 孙斌</p>
+              <h3>Robin · SunBin</h3>
+              <p class="portrait-role">建筑学硕士在读</p>
+              <dl class="portrait-meta">
+                <div><dt>Focus</dt><dd>既有建筑改造<br>养老建筑设计</dd></div>
+                <div><dt>Status</dt><dd>2027 届<br>2027年6月可到岗</dd></div>
+              </dl>
+            </div>
+          </aside>
+
+          <div class="resume-grid reveal">
+            <div>
+              <div class="resume-block">
+                <h3>教育经历 Education</h3>
+                <div class="timeline-item">
+                  <time>2024.09 — 2027.06</time>
+                  <strong>青岛理工大学 · 建筑学（硕士）</strong>
+                  <p>建筑设计与改造方向</p>
+                </div>
+                <div class="timeline-item">
+                  <time>2017.09 — 2022.06</time>
+                  <strong>潍坊学院 · 建筑学（本科）</strong>
+                  <p>建筑学专业</p>
+                </div>
+              </div>
+
+              <div class="resume-block" style="margin-top: 44px;">
+                <h3>实践经历 Experience</h3>
+                <div class="timeline-item">
+                  <time>2021.10 — 2023.04</time>
+                  <strong>山东汇港建筑设计研究有限公司 · 建筑设计实习生</strong>
+                  <p>参与住宅与文化创意小镇等 2 个建筑设计项目，负责前期调研、方案设计、图纸深化、报审配合与甲方沟通；参与潍坊紫玉兰亭住宅项目平面设计与送图报审，并参与杨家镇文化创意梦想小镇外立面设计，输出 2 版立面方案与 1 份甲方需求分析报告。</p>
+                </div>
+                <div class="timeline-item">
+                  <time>2024.09 — 至今</time>
+                  <strong>建筑设计与改造实践</strong>
+                  <p>累计参与 5 个建筑设计及改造项目，其中 2 个独立完成；独立完成中国科学院海洋研究所 4#、6# 楼和青岛福彩养老院 4# 楼改造，负责现场测绘、问题诊断、空间功能分析、平面优化、立面更新与汇报文本，其中福彩项目完成 3 张图纸及 2 套方案；参与即墨国金养老院、佰瑞福养老院建设项目，并在青岛鸿蒙智行体验店项目中完成 1 套方案及 6 张图纸。</p>
+                </div>
+                <div class="timeline-item">
+                  <time>本科阶段</time>
+                  <strong>学生组织与校企合作</strong>
+                  <p>担任班长、校学生会纪律部部长、院学生会外联部部长，负责班级管理、机构对接与校企合作活动筹备。</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="resume-block">
+                <h3>专业工具 Tools</h3>
+                <div class="skill-list">
+                  <div class="skill"><span>AutoCAD</span><span>熟练 · 平面、立面及测绘图绘制</span></div>
+                  <div class="skill"><span>SketchUp</span><span>熟练 · 建筑体量与空间推敲</span></div>
+                  <div class="skill"><span>D5</span><span>独立完成 · 建筑场景渲染</span></div>
+                  <div class="skill"><span>InDesign</span><span>独立完成 · 汇报文本与作品集排版</span></div>
+                  <div class="skill"><span>其他工具</span><span>Photoshop / Office</span></div>
+                  <div class="skill"><span>研究方向</span><span>养老建筑 / 建筑光环境</span></div>
+                </div>
+              </div>
+
+              <div class="resume-block" style="margin-top: 44px;">
+                <h3>奖项与语言 Awards</h3>
+                <div class="skill-list">
+                  <div class="skill"><span>荣誉</span><span>二、三等奖学金 / 三好学生代表</span></div>
+                  <div class="skill"><span>荣誉</span><span>优秀团员 / 优秀学生干部</span></div>
+                  <div class="skill"><span>证书</span><span>CET-4 / 普通话二级 / 计算机二级</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-grid">
+        <div class="contact-main">
+          <div>
+            <p class="eyebrow">03 / Contact</p>
+            <h2 class="contact-title">期待与你<br><span>一起设计</span></h2>
+            <p class="contact-copy">欢迎贵公司与我联系，期待参与建筑设计与方案实践。</p>
+            <div class="contact-links">
+              <a class="button primary" href="mailto:a43386326@gmail.com">a43386326@gmail.com</a>
+              <a class="button" href="tel:+8613792506098">137 9250 6098</a>
+              <span class="button">微信：13792506098</span>
+            </div>
+          </div>
+          <div>
+            <p style="margin:0;color:#8998a3;font-size:.8rem;">© 2026 孙斌 · Architecture Portfolio</p>
+          </div>
+        </div>
+        <aside class="qr-panel">
+          <div class="qr-frame">
+            <a href="https://architecture-portfolio-2026.nusdpjkkediic.chatgpt.site" target="_blank" rel="noreferrer" aria-label="打开孙斌建筑作品集在线网页"><img src="assets/qr/architecture-portfolio-qr.png" alt="打开孙斌建筑作品集网页的二维码" width="1200" height="1200"></a>
+          </div>
+          <h3>扫码查看在线作品集</h3>
+          <a class="qr-download" href="assets/qr/architecture-portfolio-qr.png" download="孙斌建筑作品集二维码.png">下载二维码图片</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell">
+      <span>建筑求职作品集 · 网页版</span>
+      <span>适配手机、平板与电脑浏览</span>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.querySelector('.menu-button');
+    const navLinks = document.querySelector('#nav-links');
+    menuButton?.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', String(open));
+      menuButton.textContent = open ? '关闭' : '菜单';
+    });
+    navLinks?.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      menuButton?.setAttribute('aria-expanded', 'false');
+      if (menuButton) menuButton.textContent = '菜单';
+    }));
+
+    const roomTypePageButtons = document.querySelectorAll('[data-room-type-page]');
+    const roomTypePanels = document.querySelectorAll('[data-room-type-panel]');
+    roomTypePageButtons.forEach((button) => button.addEventListener('click', () => {
+      const selectedPage = button.dataset.roomTypePage;
+      roomTypePageButtons.forEach((item) => {
+        const isActive = item.dataset.roomTypePage === selectedPage;
+        item.classList.toggle('is-active', isActive);
+        item.setAttribute('aria-selected', String(isActive));
+      });
+      roomTypePanels.forEach((panel) => {
+        panel.hidden = panel.dataset.roomTypePanel !== selectedPage;
+      });
+    }));
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach((item) => observer.observe(item));
+  </script>
+</body>
+</html>
